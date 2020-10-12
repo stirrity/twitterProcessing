@@ -1,6 +1,7 @@
 
 class Embedder(object):
     def __init__(self, embeddings_dict):
+        # embedding based on glove.6B.XXd
         self.dict = embeddings_dict
 
     def embed(self, tweet_text, text_length = 20, vector_size = 300, embedding_type = 'vector'):        
